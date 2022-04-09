@@ -1,0 +1,35 @@
+.background{
+    background-color: #E0E0E0;
+    margin-left: 5%;
+    margin-right: 10%;
+
+}
+.white_Space{
+    /* width: 70%;
+    height:20%;
+    background-color:white;
+
+    margin-right: 18%;
+    margin-right: 20%; */
+    background: #fff;
+    border: 1px solid rgb(248, 246, 246);
+    padding: 2em 6em;
+    -webkit-box-shadow: 0 0.1rem 0.8rem rgb(0 0 0 / 15%);
+    box-shadow: 0 0.1rem 0.8rem rgb(0 0 0 / 15%);
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 2%;
+    margin-right: 10%;
+
+    border-spacing: initial
+    
+}
+.text_button{
+    /* text-align: left;
+    flex-wrap: wrap; */
+    color: #777373;
+    text-align: left;
+}
+.space_between_contents{
+    border-spacing: 1cm 2em;
+}
