@@ -1,6 +1,7 @@
 import Home from "../pages/home";
 import Profile from "../pages/profile";
 import Progress from "../pages/progess";
+import ProfileTest from "../pages/ProfileTest";
 
 export const ROUTES = [
   {
@@ -24,6 +25,14 @@ export const ROUTES = [
     url: "/profile",
     private: false,
     component: Profile,
+    exact: true,
+    header: true,
+  },
+  {
+    name: "Profile",
+    url: "/profiletest",
+    private: false,
+    component: ProfileTest,
     exact: true,
     header: true,
   },
