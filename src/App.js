@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 const MainView = () => {
   return (
-    <Box>
+    <Box style={{ width: "100%", height: "92vh" }}>
       <Header />
       <AppRouter />
     </Box>

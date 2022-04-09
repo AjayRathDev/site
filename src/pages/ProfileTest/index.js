@@ -1,74 +1,18 @@
 import React from "react";
-import { Box, Grid, Card, Typography } from "@mui/material";
-
-const details = [
-  { title: "Name", value: "Ajay Ratah", icon: "" },
-  { title: "Age", value: "28" },
-  { title: "awdaw" },
-];
+import { Grid } from "@mui/material";
+import LeftProfile from "./LeftProfile";
+import RightProfile from "./RightProfile";
 
 const Profile = () => {
   return (
-    <Box>
-      <Card
-        style={{
-          height: " 90.6vh",
-          width: "20%",
-        }}
-      >
-        <Box
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            padding: "5px",
-            flexDirection: "column",
-          }}
-        >
-          <Box style={{ display: "flex", justifyContent: "center" }}>
-            <img
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                height: "80%",
-                width: "80%",
-                borderRadius: "50%",
-              }}
-              alt="profile"
-              src="https://mui.com/static/images/avatar/2.jpg"
-            />
-          </Box>
-          <Box style={{ padding: "10px" }}>
-            <Typography
-              style={{ textAlign: "center", fontWeight: "bold" }}
-              variant="h5"
-            >
-              Ajay Ratha
-            </Typography>
-
-            {details?.map((item, index) => {
-              return (
-                <Grid container spacing={1}>
-                  <Grid
-                    item
-                    xs={5}
-                    style={{ display: "flex", justifyContent: "flex-end" }}
-                  >
-                    <Typography variant="h6">{item.title} :</Typography>
-                  </Grid>
-                  <Grid
-                    item
-                    xs={7}
-                    style={{ display: "flex", justifyContent: "flex-start" }}
-                  >
-                    <Typography variant="h6">{item.value}</Typography>
-                  </Grid>
-                </Grid>
-              );
-            })}
-          </Box>
-        </Box>
-      </Card>
-    </Box>
+    <Grid container style={{ display: "flex", height: "100%" }}>
+      <Grid item xs={2.5}>
+        <LeftProfile />
+      </Grid>
+      <Grid item xs={9.5}>
+        <RightProfile />
+      </Grid>
+    </Grid>
   );
 };
 
